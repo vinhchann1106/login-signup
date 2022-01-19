@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  padding: 0 20px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.form {
+  max-width: 420px;
+  width: 100%;
+}
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #086e7d;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group-invaild.form-group-input {
+  border-color: #da1212;
+}
+.form-group-invaild.form-group-input i {
+  color: #da1212;
+}
+.form-group-vaild.form-group-input {
+  border-color: #24a19c;
+}
+.form-group-vaild.form-group-input i {
+  color: #24a19c;
+}
+.form-group-vaild .icon-vaild {
+  display: block;
+  position: absolute;
+  right: 10px;
+  left: auto;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #24a19c;
+}
+.form-group-input {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid #dbdbdb;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+.form-group-input:focus-within {
+  border-color: #24a19c;
+}
+.form-group-input:focus-within i {
+  color: #24a19c;
+}
+.form-group-input i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #7c99ac;
+  position: absolute;
+  left: 10px;
+}
+.form-group-input input {
+  width: 100%;
+  outline: none;
+  height: 50px;
+  padding: 0 44px;
+  border: none;
+  color: #141e61;
+  background-color: #fafafa;
+  transition: all 0.2s linear;
+}
+.form-group-input input:focus {
+  background-color: #fff;
+}
+.form-group-input input:focus::-webkit-input-placeholder {
+  color: #24a19c;
+}
+.form-group-input input:focus::-moz-input-placeholder {
+  color: #24a19c;
+}
+.form-group-input input::-webkit-input-placeholder {
+  color: #7c99ac;
+}
+.form-group-input input::-moz-input-placeholder {
+  color: #7c99ac;
+}
+.form-warning {
+  display: block;
+  margin-left: 8px;
+  font-style: italic;
+  color: #da1212;
+}
+.form button[type=submit] {
+  width: 90%;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  background-color: #24a19c;
+  color: #eee;
+  transition: all 0.2s ease-out;
+}
+.form button[type=submit]:hover {
+  opacity: 0.9;
+}
+.form-option-switch {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.form-option-switch * {
+  text-decoration: none;
+  color: #2f3a8f;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.form-hide {
+  display: none;
+}
+
+.icon-vaild {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
